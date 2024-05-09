@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style_co_inscri.css">
+    <title>Reservation</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Réserver</h1>
+        <form action="/php/reserver.php" method="POST">
+
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="heure">Heure :</label>
+            <input type="time" id="heure" name="heure" required><br>
+
+            <button type="submit">Réserver</button>
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Google Maps Embed</title>
+    <meta charset="utf-8">
+    <style>
+        /* Supprimer les marges par défaut du navigateur */
+        html, body {
+            height: 100%; /* pleine hauteur */
+            margin: 0; /* aucune marge */
+            padding: 0; /* aucun padding */
+            overflow: hidden; /* supprimer les barres de défilement si nécessaire */
+        }
+        /* Style pour l'iframe */
+        iframe {
+            height: 100vh; /* pleine hauteur de la fenêtre de visualisation */
+            width: 100vw; /* pleine largeur de la fenêtre de visualisation */
+            border: none; /* pas de bordure */
+        }
+        /* Style pour le titre, positionné en haut à droite */
+        h1 {
+            position: absolute; /* positionnement absolu */
+            top: 10px; /* marge en haut */
+            right: 10px; /* marge à droite */
+            color: white; /* couleur du texte */
+            background: rgba(0,0,0,0.5); /* fond semi-transparent */
+            padding: 5px; /* padding autour du texte */
+            border-radius: 5px; /* bords arrondis */
+            z-index: 1000; /* s'assurer qu'il reste au-dessus de la carte */
+        }
+    </style>
+</head>
+<body>
+    <h1>Emplacement sur Google Maps</h1>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6834.360879175911!2d2.207133171809932!3d48.90324728930844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66466ab41d5e7%3A0x45694d7dfbad7f55!2sUniversit%C3%A9%20Paris%20Nanterre!5e0!3m2!1sfr!2sfr!4v1714754130661!5m2!1sfr!2sfr"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+</body>
+</html>
